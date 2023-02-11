@@ -1,5 +1,7 @@
-describe("", () => {
-  test("", () => {
-    expect(2 + 2).toBe(4)
-  })
+import Person from "."
+
+it("should sum", () => {
+  const person = new Person()
+
+  expect(person.sayMyName()).toBe("André")
 })
