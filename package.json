@@ -5,7 +5,8 @@
   "author": "André Souza <andre.souza@creathus.org.br>",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon --watch src/ --exec ts-node src/index.ts -e ts"
+    "start:dev": "nodemon --watch src/ --exec ts-node src/index.ts -e ts",
+    "husky:prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
@@ -13,6 +14,8 @@
     "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.4",
     "ts-node": "^10.9.1",
