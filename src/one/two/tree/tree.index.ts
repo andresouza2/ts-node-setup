@@ -1,4 +1,4 @@
-import Person from "@/index"
+import Person from "@/person"
 
 const person = new Person()
 
