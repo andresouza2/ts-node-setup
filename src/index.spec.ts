@@ -1,4 +1,4 @@
-import { Person } from "."
+import Person from "@/index"
 
 it("o nome está coreto?", () => {
   const pessoa = new Person()
