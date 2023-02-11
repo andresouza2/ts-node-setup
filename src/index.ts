@@ -1,11 +1,13 @@
-import Tree from "@/one/two/tree/tree.index"
+import * as express from "express"
+import { Request, Response } from "express"
+import Person from "@/person"
 
-class Person {
-  sayMyName() {
-    return "André"
-  }
-}
+const app = express()
 
-console.log(new Tree().lgo())
+app.get("/", (req: Request, res: Response) => {
+  res.send(new Person().sayHello())
+})
 
-export default Person
+app.listen(3000, () => {
+  console.log("listening on port 3000")
+})

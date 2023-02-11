@@ -1,7 +1,5 @@
-class Tree {
-  lgo() {
-    return 3
-  }
-}
+import Person from "@/index"
 
-export default Tree
+const person = new Person()
+
+export default person
